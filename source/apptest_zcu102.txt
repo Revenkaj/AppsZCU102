@@ -1,0 +1,18 @@
+http://www.wiki.xilinx.com/Zynq+Linux
+
+(||GIT_DISCOVERY_ACROSS_FILESYSTEM)
+
+Build Linux Image:
+•	git clone https://github.com/Xilinx/linux-xlnx.git
+•	cd linux-xlnx
+•	git checkout xilinx-v2017.4
+•	export CROSS_COMPILE=aarch64-linux-gnu-
+•	export ARCH=aarch64
+•	make xilinx_zynqmp_defconfig
+•	make
+•	The kernel is configured based on linux-xlnx/arch/arm64/configs/xilinx_zynqmp_defconfig:
+•	make ARCH=arm64 xilinx_zynqmp_defconfig
+•	make ARCH=arm64 menuconfig
+•	To produce the kernel image:
+•	make ARCH=arm64
+•	In the process, linux-xlnx/arch/arm64/boot/Image is created. The Image file is the uncompressed kernel image.
