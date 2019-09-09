@@ -16,3 +16,5 @@ Build Linux Image:
 •	To produce the kernel image:
 •	make ARCH=arm64
 •	In the process, linux-xlnx/arch/arm64/boot/Image is created. The Image file is the uncompressed kernel image.
+
+--- Changes are more 2nd change!
